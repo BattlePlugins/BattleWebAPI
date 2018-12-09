@@ -1,4 +1,4 @@
-package test.mc.battleplugins.api;
+package mc.alk.battlewebapi;
 
 import com.avaje.ebean.EbeanServer;
 import org.bukkit.Server;
@@ -19,9 +19,11 @@ import java.util.logging.Logger;
  * @author alkarin
  */
 public class TestPlugin implements Plugin {
+
     final PluginDescriptionFile pdf;
+
     public TestPlugin(String name, String version) {
-        pdf = new PluginDescriptionFile(name,version,this.getClass().toString());
+        pdf = new PluginDescriptionFile(name, version, this.getClass().toString());
 
     }
 
