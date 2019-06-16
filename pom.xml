@@ -15,8 +15,8 @@
     <!-- Locations for jar repositories -->
     <repositories>
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/content/groups/public</url>
+            <id>battleplugins-repo</id>
+            <url>https://artifactory.battleplugins.org/artifactory/libs-release</url>
         </repository>
     </repositories>
     <!-- Dependencies -->
@@ -24,7 +24,7 @@
       <dependency>
           <groupId>org.bukkit</groupId>
           <artifactId>bukkit</artifactId>
-          <version>1.7.2-R0.1-SNAPSHOT</version>
+          <version>1.7.2-R0.1</version>
           <scope>provided</scope>
       </dependency>
       <dependency>
@@ -82,8 +82,14 @@
     </build>
     <distributionManagement>
         <repository>
-            <id>rainbowcraft-repo</id>
-            <url>scp://rainbowcraft.sytes.net/var/www/maven/repository</url>
+            <id>central</id>
+            <name>BattlePlugins Artifactory Server-releases</name>
+            <url>https://artifactory.battleplugins.org/artifactory/libs-release-local</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>BattlePlugins Artifactory Server-snapshots</name>
+            <url>https://artifactory.battleplugins.org/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
